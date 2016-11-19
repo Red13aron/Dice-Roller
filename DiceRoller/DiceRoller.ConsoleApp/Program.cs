@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DiceRoller.ConsoleApp
 {
@@ -18,9 +15,9 @@ namespace DiceRoller.ConsoleApp
 
             var attack = new List<DieRoll>();
 
-            attack.Add(new ConsoleApp.DieRoll(20, 1));
-            attack.Add(new ConsoleApp.DieRoll(4, 1));
-            attack.Add(new ConsoleApp.DieRoll(8, 1));
+            attack.Add(new DieRoll(20, 1));
+            attack.Add(new DieRoll(4, 1));
+            attack.Add(new DieRoll(8, 1));
 
             var attackResult = roller.Roll(attack) + 11;
 
